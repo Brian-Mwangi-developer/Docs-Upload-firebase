@@ -56,7 +56,7 @@ const HeaderIcons = styled.div`
 `
 
 
-const Header = () => {
+const Header = ({photoURL}) => {
   return (
     <HeaderContainer>
     <HeaderLogo>
@@ -75,7 +75,7 @@ const Header = () => {
         </span>
         <span>
             <AppsIcon />
-            <Avatar src='./profile.jpg' />
+            <Avatar src={photoURL} />
         </span>
     </HeaderIcons>
 </HeaderContainer>
